@@ -1,0 +1,5 @@
+Docker networking allows containers to communicate with each other.
+Kubernetes manages container orchestration across clusters.
+Vector databases store embeddings for similarity search.
+Embeddings convert text into numerical vectors.
+FastAPI is used to build APIs quickly in Python.
