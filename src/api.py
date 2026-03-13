@@ -23,3 +23,9 @@ def search(query: str):
         "query": query,
         "results": results
     }
+    
+
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
