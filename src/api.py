@@ -1,5 +1,8 @@
 from fastapi import FastAPI
-from search_service import SearchService
+try:
+    from .search_service import SearchService
+except ImportError:
+    from search_service import SearchService
 
 app = FastAPI()
 

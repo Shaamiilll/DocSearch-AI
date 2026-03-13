@@ -1,6 +1,11 @@
-from load_docs import load_documents
-from embedder import Embedder
-from vector_store import VectorStore
+try:
+    from .load_docs import load_documents
+    from .embedder import Embedder
+    from .vector_store import VectorStore
+except ImportError:
+    from load_docs import load_documents
+    from embedder import Embedder
+    from vector_store import VectorStore
 
 
 class SearchService:
